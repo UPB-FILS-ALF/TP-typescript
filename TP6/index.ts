@@ -90,7 +90,7 @@ class AttributionNode extends ASTNode {
     }
 }
  
-/** TODO 1: Create a class for List Nodes which will return a Node with the following properties
+/** TODO 4: Create a class for List Nodes which will return a Node with the following properties
      * id => list_declaration
      * list_type => the actual type, which will be set in the Visitor as list
      * list_name => the name of the list
