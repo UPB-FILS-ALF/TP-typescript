@@ -26,13 +26,25 @@ function writeThreeAddressCode (node: any)
         {
             writeThreeAddressCode (node.left);
             writeThreeAddressCode (node.right);
+
+            /** TODO 4:
+             *  Compute the result to be the next variable
+             *  Log the result in T.A.C format
+             */
             
-            // TODO
         }
     } else if (node instanceof AttributionNode) {
-        // TODO
+        /** TODO 5:
+         *  Write T.A.C recursively for the right side of the node (value)
+         *  Log the result in T.A.C format
+         */
+        
     } else if (node instanceof FunctionCallNode) {
-        // TODO
+        /** TODO 6: 
+         *  Write T.A.C recursively for each parameter of the function
+         *  Log the result in T.A.C format for function calls 
+         */
+
     }
 }
 
