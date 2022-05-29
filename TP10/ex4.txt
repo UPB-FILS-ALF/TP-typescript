@@ -1,0 +1,19 @@
+JMP start
+str: 	DB "0" 	; Variable
+       	DB 0    ; String terminator
+
+ 
+
+start:
+    	mov C, 4
+    	mov b, 232
+while:
+    	cmp C, 0
+    	je end
+    	mov d, [str]
+    	mov [b], d
+    	inc b
+    	dec C
+    	jmp while
+end:
+    	hlt

@@ -1,0 +1,17 @@
+    jmp start
+mod:
+    mov a, [sp+3]
+    mov b, [sp+2]
+    mov d, a
+    div b
+    mul b
+    sub d, a
+    mov a, d
+    ret
+   
+start:
+    push 7
+    push 3
+    call mod ;(a, b params, return a)
+    add sp, 2
+    hlt

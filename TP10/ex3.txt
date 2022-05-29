@@ -1,0 +1,12 @@
+	; R = D - I * C
+	JMP start
+
+start:
+	MOV A, 17    	
+	MOV B, 3	
+	MOV D, A
+	DIV B
+	MUL B
+	SUB D, A
+	MOV A, D
+	HLT

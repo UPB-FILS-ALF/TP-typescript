@@ -1,0 +1,13 @@
+   
+jmp start
+swap:
+    mov d, a
+    mov a, b
+    mov b, d
+    ret
+   
+start:
+    mov a, 5
+    mov b, 2
+    call swap
+    hlt
