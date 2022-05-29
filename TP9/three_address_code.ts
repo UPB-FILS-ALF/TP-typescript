@@ -29,7 +29,7 @@ function writeThreeAddressCode (node: any)
           * Write T.A.C recursively for each parameter
           * Log the T.A.C using stack format
          */
-    } else (node instanceof FunctionNode)
+    } else if (node instanceof FunctionNode)
     {
         /** TODO 8: Write T.A.C using stack format */
     }
